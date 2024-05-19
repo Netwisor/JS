@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/sum.css">
+</head>
+<body>
+    <script>
+               let firstValue = parseFloat(prompt("Введіть перше число (від 0 до 1):","0.1"));
+let secondValue = parseFloat(prompt("Введіть друге число (від 0 до 1):","0.8"));
+
+
+if (!isNaN(firstValue) && !isNaN(secondValue) && firstValue >= 0 && firstValue <= 1 && secondValue >= 0 && secondValue <= 1) {
+    
+    let sum = firstValue + secondValue;
+    document.write("<div>сумма: " + sum.toFixed(2)); 
+} else {
+    document.write("<div>значення повинно бути в межах від 0 до 1.</div>");
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+                div{
+			font-size: 35px; 
+			color: rgb(0, 0, 0);
+			text-align: center;
+            margin-top: 190px;
+		}
+		.side{
+			width: 50px;
+			height: 50px;
+			font-size: 36px;
+			text-align: center;
+
+		}
+       
+body{
+    background-image: url(https://habrastorage.org/webt/5f/b1/07/5fb10728ee9a9357394035.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+/* CSS */
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+height: 75px;
+  width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+    </style>
+</head>
+<body>
+	<script>
+    function HeroName() {
+        let Hero = +document.hero.name.value; 
+        if (Hero == "Гаррі Потер") {
+        document.getElementById('result').innerHTML ="Гаррі Потер";
+        }
+        else{
+        document.getElementById('result').innerHTML = "Гаррі Потер";
+        }
+            }    
+      </script>
+      <div>
+    <p>Заповніть три крапки: ...і філосовський камінь </p>
+    <form name="hero" action="javascript:HeroName()">
+     <input class="cqe" name="name" type="text" value="" size="10">
+    <button class="button-64" type="submit" name="submit" value="">Перевірити</button>
+    <button class="button-64" type="reset" name="reset" value="">Сброс</button>
+    </form>
+    <p><span id="result"></span></p>
+    </div>
+    
+
+
+
+                   
+                
+</body>
+</html>

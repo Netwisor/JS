@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let month = prompt('Введіть місяць (Двохзначне число)', '');
+        switch (month) {
+        case "01":
+        case "02":
+        case "12":
+        document.write("Це зима")
+            break;
+            case "05":
+        case "03":
+        case "04":
+            document.write("Це весна")
+            break;
+            case "06":
+        case "07":
+        case "08":
+        document.write("Це літо")
+            break;
+            case "10":
+        case "09":
+        case "11":
+        document.write("Це Осінь")
+            break;
+            default:
+            document.write( 'Це не той місяць' );
+}
+
+
+    </script>
+</body>
+</html>

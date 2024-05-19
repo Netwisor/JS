@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        	
+		let num=Math.ceil(Math.random()*100);
+		 let number;
+		 let i = 10;
+		 do{
+		 	number = prompt("Вгадай число від одного до ста.", '');
+		 	if(number===null){
+		 		alert("Введіть число");
+		 	}else if(+number>num){
+		 	alert('ти маєш '+ --i + ' спроб.');
+		 } else if(+number<num){
+		 	alert('ти маєш вже не багато спроб ' + --i + ' .');
+		 } else{
+		 	document.writeln('ти вгадав '+ num);
+		 }
+		 } while(number!=num && number != null && i!=0); 
+	</script>
+   
+</body>
+</html>
